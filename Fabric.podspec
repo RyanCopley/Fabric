@@ -28,6 +28,6 @@ Pod::Spec.new do |spec|
   spec.subspec "Twitter" do |twitter|
     twitter.vendored_frameworks = "TwitterKit.framework"
     twitter.resource_bundles = { "TwitterKitResources" => "TwitterKit.framework/Resources/TwitterKitResources.bundle/*" }
-    twitter.framework = "AddressBook"
+    twitter.frameworks = "AddressBook", "Accounts", "Social"
   end
 end
